@@ -77,8 +77,12 @@ begin
 	min.cod := valorAlto;
 	indiceMin:= 0;
 	for i:= 1 to n do 
-	if (registro[i].cod <> valorAlto) then begin
-			if (registro[i].cod < min.cod) then begin
+		if (registro[i].cod <> valorAlto) then begin
+			if (registro[i].cod < min.cod) or ((registro[i].cod = min.cod)and (registro[i].cepa < min.cepa)) then begin
+				min:= registro[i];
+				indiceMin:= i;
+			end;
+			{if (registro[i].cod < min.cod) then begin
 					min:= registro[i];
 					indiceMin:= i;
 			end
@@ -86,8 +90,8 @@ begin
 			if (registro[i].cod = min.cod)and (registro[i].cepa < min.cepa)then begin
 				min:= registro[i];
 				indiceMin:= i;
-			end;
-	end;
+			end;}
+		end;
 	if (indiceMin <> 0) then 
 		leer (deta[indiceMin],registro[indiceMin]);
 end;
