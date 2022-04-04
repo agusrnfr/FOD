@@ -106,8 +106,8 @@ begin
 			totalConst:=0;
 			totalConA:=0;
 			totalEntregaS:=0;
-			while (min.codP = codPActual) and (min.codL = codLActual) do begin //se puede hacer sin este corte
-				totalConL+=min.vConL;										   // porque las localidades no se repiten
+			while (min.codP = codPActual) and (min.codL = codLActual) do begin 
+				totalConL+=min.vConL;										   
 				totalConG+=min.vConG;
 				totalConst+=min.vConst;
 				totalConA+=min.vConA;
