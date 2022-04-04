@@ -10,7 +10,9 @@ sin asiento disponible.
 d. Generar una lista con aquellos vuelos (destino y fecha y hora de salida) que
 tengan menos de una cantidad específica de asientos disponibles. La misma debe
 ser ingresada por teclado.
-NOTA: El archivo maestro y los archivos detalles sólo pueden recorrerse una vez.}
+NOTA: El archivo maestro y los archivos detalles sólo pueden recorrerse una vez.
+ES IMPOSIBLE RECORRER EL ARCHIVO MAESTRO UNA VEZ, HAY QUE RECORRERLO 1 PARA ACTUALIZARLO
+Y OTRA PARA LISTAR TODOS LOS VUELOS PORQUE SI EL DETALLE ES MAS CHICO QUE EL MAESTRO HAY ALGUNOS QUE NO SE LISTAN}
 
 program ejer14;
 
@@ -93,13 +95,12 @@ begin
 	pUlt:= nuevo;
 end;
 
-procedure actualizar (var arc_maestro:maestro; var det1,det2: detalle; var p:lista; cant:integer);
+procedure actualizar (var arc_maestro:maestro; var det1,det2: detalle);
 var
 m:cMaestro;
 min,regD1,regD2:cDetalle;
 totalAs:integer;
 desActual,fecActual,horaActual: string;
-pUlt:lista;
 begin
 	reset (arc_maestro);
 	reset (det1);
@@ -124,8 +125,6 @@ begin
 				seek (arc_maestro,filePos (arc_maestro)-1);
 				m.cantAs-= totalAs;
 				write (arc_maestro,m);
-				if (m.cantAs < cant) then
-					agregarAlFinal (p,pUlt,m);
 				end;
 		end;
 	end;
@@ -142,6 +141,20 @@ begin
 	end;
 end;
 
+procedure listar (var p:lista; var arc_maestro: maestro ; cant : integer);
+var
+m:cMaestro;
+pUlt:lista;
+begin
+	reset(arc_maestro);
+	while not eof(arc_maestro) do begin
+		read(arc_maestro,m);
+		if (m.cantAs < cant) then
+			agregarAlFinal (p,pUlt,m);
+	end;  
+        close(arc_maestro);
+end;
+
 
 var
 arc_maestro:maestro;
@@ -155,7 +168,8 @@ begin
 	Assign (det1,'detalle1');
 	Assign (det2,'detalle2');
 	write ('INGRESE UNA CANTIDAD DE ASIENTOS: '); readln (cant);
-	actualizar (arc_maestro,det1,det2,p,cant);
-	imprimirLista (p)
+	actualizar (arc_maestro,det1,det2);
+	listar (p,arc_maestro,cant);
+	imprimirLista (p);
 end.
 
