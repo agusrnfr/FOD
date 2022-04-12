@@ -1,5 +1,5 @@
 # FOD 
- ![FOD](https://i.postimg.cc/qvPc5Dz3/Imagen.jpg)
+ ![FOD]([url=https://postimg.cc/NLFHLLVp][img]https://i.postimg.cc/NLFHLLVp/Imagen.jpg[/img][/url])
 
 ## PRACTICAS 
 
