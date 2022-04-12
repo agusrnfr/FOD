@@ -1,5 +1,7 @@
 # FOD 
- ![FOD](https://i.postimg.cc/Dz6np5m4/Imagen.jpg)
+ <p align="center">
+  <img src= "https://i.postimg.cc/Dz6np5m4/Imagen.jpg" alt = "FOD"/>
+</p>
 
 ## PRACTICAS 
 
@@ -33,3 +35,9 @@
 * [**Ejercicio 16**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%202/Ejercicio_16)
 * [**Ejercicio 17**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%202/Ejercicio_17)
 * [**Ejercicio 18**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%202/Ejercicio_18)
+
+### **Practica 3**
+ *ENUNCIADOS PRACTICA 3* [↺](https://github.com/agusrnfr/FOD/blob/main/PRACTICA%203/Pr%C3%A1ctica%203%20-%20Archivos.pdf)
+ * [**Ejercicio 1**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%203/Ejercicio_1)
+ * [**Ejercicio 2**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%203/Ejercicio_2)
+ * [**Ejercicio 3**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%203/Ejercicio_3)
