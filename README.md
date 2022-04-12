@@ -3,11 +3,11 @@
   <img src= "https://i.postimg.cc/Dz6np5m4/Imagen.jpg" alt = "FOD"/>
 </p>
 
-## PRACTICAS 
-`Indice de Practicas`
+## PRÁCTICAS 
+`Índice de Practicas`
 
-### **Practica 1**
-  *ENUNCIADOS PRACTICA 1* [↺](https://github.com/agusrnfr/FOD/blob/main/PRACTICA%201/Pr%C3%A1ctica%201%20-%20Archivos.pdf)
+### **Práctica 1**
+  *ENUNCIADOS PRÁCTICA 1* [↺](https://github.com/agusrnfr/FOD/blob/main/PRACTICA%201/Pr%C3%A1ctica%201%20-%20Archivos.pdf)
 * [**Ejercicio 1**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%201/Ejercicio_1)
 * [**Ejercicio 2**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%201/Ejercicio_2)
 * [**Ejercicio 3**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%201/Ejercicio_3)
@@ -16,8 +16,8 @@
 * [**Ejercicio 6**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%201/Ejercicio_6)
 * [**Ejercicio 7**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%201/Ejercicio_7)
 
-### **Practica 2**
- *ENUNCIADOS PRACTICA 2* [↺](https://github.com/agusrnfr/FOD/blob/main/PRACTICA%202/Pr%C3%A1ctica%202%20-%20Archivos.docx.pdf)
+### **Práctica 2**
+ *ENUNCIADOS PRÁCTICA 2* [↺](https://github.com/agusrnfr/FOD/blob/main/PRACTICA%202/Pr%C3%A1ctica%202%20-%20Archivos.docx.pdf)
 * [**Ejercicio 1**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%202/Ejercicio_1)
 * [**Ejercicio 2**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%202/Ejercicio_2)
 * [**Ejercicio 3**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%202/Ejercicio_3)
@@ -37,8 +37,8 @@
 * [**Ejercicio 17**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%202/Ejercicio_17)
 * [**Ejercicio 18**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%202/Ejercicio_18)
 
-### **Practica 3**
- *ENUNCIADOS PRACTICA 3* [↺](https://github.com/agusrnfr/FOD/blob/main/PRACTICA%203/Pr%C3%A1ctica%203%20-%20Archivos.pdf)
+### **Práctica 3**
+ *ENUNCIADOS PRÁCTICA 3* [↺](https://github.com/agusrnfr/FOD/blob/main/PRACTICA%203/Pr%C3%A1ctica%203%20-%20Archivos.pdf)
  * [**Ejercicio 1**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%203/Ejercicio_1)
  * [**Ejercicio 2**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%203/Ejercicio_2)
  * [**Ejercicio 3**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%203/Ejercicio_3)
