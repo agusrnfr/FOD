@@ -4,6 +4,7 @@
 </p>
 
 ## PRACTICAS 
+`Indice de Practicas`
 
 ### **Practica 1**
   *ENUNCIADOS PRACTICA 1* [↺](https://github.com/agusrnfr/FOD/blob/main/PRACTICA%201/Pr%C3%A1ctica%201%20-%20Archivos.pdf)
