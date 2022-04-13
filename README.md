@@ -44,3 +44,4 @@
  * [**Ejercicio 3**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%203/Ejercicio_3)
  * [**Ejercicio 4**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%203/Ejercicio_4)
  * [**Ejercicio 5**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%203/Ejercicio_5)
+ * [**Ejercicio 6**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%203/Ejercicio_6)
