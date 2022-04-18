@@ -130,8 +130,11 @@ begin
 		seek (arc_log,0); //vuelvo al registro cabecera 
 		write (arc_log,indice); //escribo el indice que tenia almacenado en la posicion que acabo de dar de alta 
 	end
-	else
-		writeln ('NO HAY ESPACIO LIBRE');
+	else begin
+		seek (arc_log,fileSize(arc_log));
+		leer(n);
+		write (arc_log,n);
+	end;
 end;
 
 procedure modificarNovela (var n:novela);
