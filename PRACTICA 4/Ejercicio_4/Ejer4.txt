@@ -1,0 +1,15 @@
+4. Defina los siguientes conceptos:
+● Overflow
+● Underflow
+● Redistribución
+● Fusión o concatenación
+En los dos últimos casos, ¿cuándo se aplica cada uno?
+
+
+● Overflow: cuando un nodo supera el maximo de elementos.
+
+● Underflow: cuandoun nodo tiene menos del minimo de elementos.
+
+● Redistribucion: cuando un nodo tiene underflow puede trasladarse llaves de un nodo adyacente hermano (en caso que este tenga suficientes elementos).
+
+● Fusion: cuando un nodo tiene underflow si un nodo adyacente hermano está al mínimo (no le sobra ningún elemento) no se puede redistribuir, se concatena con un nodo adyacente disminuyendo el # de nodos (y en algunos casos la altura del árbol).

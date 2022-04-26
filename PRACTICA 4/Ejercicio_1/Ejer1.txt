@@ -1,0 +1,21 @@
+1. Definir la estructura de datos correspondiente a un árbol B de orden M, que
+almacenará información correspondiente a alumnos de la facultad de informática de
+la UNLP. De los mismos deberá guardarse nombre y apellido, DNI, legajo y año de
+ingreso. ¿Cuál de estos datos debería seleccionarse como clave de identificación para
+organizar los elementos en el árbol? ¿Hay más de una opción? Justifique su elección.
+
+Un arbol B es un arbol multicamino con una construccion especial de arboles que permite mantenerlos balanceados a bajo costo.
+
+Propiedad de Arboles Orden M:
+
++ Cada nodo pued tener como max M descendientes y M-1 elementos.
+
++ La raiz tiene 0 o al menos dos descendientes.
+
++ Un nodo con X descendientes contiene X-1 elementos.
+
++ Todos los nodos menos la raiz tienen como minimo [M/2] - 1 elementos y como maximo M - 1.
+
++ Todas las hojas estan al mismo nivel.
+
+Deberia seleccionarse como clave de identificacion el DNI o el legajo ya que son claves univocas.

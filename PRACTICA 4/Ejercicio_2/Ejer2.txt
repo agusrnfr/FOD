@@ -1,0 +1,29 @@
+2. Redefinir la estructura de datos del ejercicio anterior para un árbol B+ de orden M.
+Responda detalladamente:
+a. ¿Cómo accede a la información para buscar al alumno con DNI 23.333.333?
+b. ¿Cómo accede a la información para buscar al alumno José Perez?
+c. Indique cuáles son las ventajas que ofrece este tipo de árbol para el caso de la
+búsqueda planteada en el inciso b.
+
+Constituyen una mejora sobre los árboles B, pues conservan la propiedad de acceso aleatorio rápido y permiten además un recorrido secuencial rápido. 
+Consiste en un conjunto de grupos de registros ordenados por clave en forma secuencial, junto con un conjunto de índices, que proporciona acceso rápido a los registros.
+Conjunto índice: Proporciona acceso indizado a los registros. Todas las claves se encuentran en las hojas, duplicándose en la raíz y nodos interiores aquellas que resulten necesarias para definir los caminos de búsqueda.
+Conjunto secuencia: Contiene todos los registros del archivo. Las hojas se vinculan para facilitar el recorrido secuencial rápido. Cuando se lee en orden lógico, lista todos los registros por el orden de la clave.
+
+Propiedades
++ Cada nodo pued tener como max M descendientes y M-1 elementos.
+
++ La raiz tiene 0 o al menos dos descendientes.
+
++ Un nodo con X descendientes contiene X-1 elementos.
+
++ Todos los nodos menos la raiz tienen como minimo [M/2] - 1 elementos y como maximo M - 1.
+
++ Todas las hojas estan al mismo nivel.
+
++ Los nodos terminales representan un conjunto de datos y son linkeados juntos.
+
+
+a. Conjunto indice.
+b. Conjunto secuencia.
+c. Puede conservar la propiedad de acceso aleatorio rapido y permite ademas un recorrido secuencial rapido.

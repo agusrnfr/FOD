@@ -1,0 +1,57 @@
+3. Dado el siguiente algoritmo de búsqueda en un árbol B:
+
+function buscar(NRR, clave, NRR_encontrado, pos_encontrada)
+begin
+	if (nodo = null)
+		buscar := false; {clave no encontrada}
+	else
+		posicionarYLeerNodo(A, nodo, NRR);
+		if (claveEncontrada(A, nodo, clave, pos)) then
+			NRR_encontrado := NRR; {NRR actual)
+			pos_encontrada := pos; {posición dentro del array}
+		end
+		else
+			buscar(nodo.hijo[pos], clave, NRR_encontrado, pos_encontrada)
+end;
+Asuma que para la primera llamada, el parámetro NRR contiene la posición de la raíz
+del árbol. Responda detalladamente:
+a. PosicionarYLeerNodo(): Indique qué hace y la forma en que deben ser enviados
+los parámetros (valor o referencia).
+b. claveEncontrada(): Indique qué hace y la forma en que deben ser enviados los
+parámetros (valor o referencia). ¿Cómo lo implementaría?
+c. ¿Existe algún error en este código? En caso afirmativo, modifique lo que considere
+necesario. --> es un error el algoritmo entero :c.
+
+
+c.procedure buscar (NRR,clave,NRR_encontrado,pos_encontrada,ok,pos,A);
+var
+	pos:integer;
+	nodo:array;
+begin
+	posicionarYLeerNodo(A,nodo,NRR);
+	if (nodo = null) then
+		ok := false
+	else
+		claveEncontrada(A,nodo,clave,pos,encontro);
+		if (encontro) then begin
+			ok:= true;
+			NRR_encontrado:= NRR;
+			pos_encontrada:= pos
+		end
+		else
+			buscar(nodo.hijo[pos],clave,NRR_encontrado,pos_encontrada,ok,A);
+end;
+
+a. Se posiciona en el registro correspondiente al NRR pasado como parametro y retorna los elementos (claves) de el en la variable nodo que es un array. NRR seria el índice del registro en el archivo.
++ A es por referencia, es el archivo
++ NRR es por valor, es la posicon
++ nodo es por referencia, es array con las claves
+
+b. Busca en el array de claves si esta la clave buscada;
+Si esta: encontro := true y pos contiene la posicion del array en la que se encuentra la clave.
+Si no esta: encontro := false y pos contiene la posicion del array de hijos al que hay que ir para obtener en NRR del hijo en el que debo buscar. 
++ A es por referencia.
++ pos es por referencia.
++ nodo es por valor.
++ clave es por valor.
++ encontro es por referencia.
