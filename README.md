@@ -55,3 +55,6 @@
  * [**Ejercicio 3**](https://github.com/agusrnfr/FOD/tree/501950def35ca8069b8cc1eb61010fc552ccbbcc/PRACTICA%204/Ejercicio_3)
  * [**Ejercicio 4**](https://github.com/agusrnfr/FOD/tree/501950def35ca8069b8cc1eb61010fc552ccbbcc/PRACTICA%204/Ejercicio_4)
  * [**Ejercicio 5**](https://github.com/agusrnfr/FOD/tree/501950def35ca8069b8cc1eb61010fc552ccbbcc/PRACTICA%204/Ejercicio_5) 
+ * [**Ejercicio 6**](https://github.com/agusrnfr/FOD/tree/501950def35ca8069b8cc1eb61010fc552ccbbcc/PRACTICA%204/Ejercicio_6) 
+ * [**Ejercicio 7**](https://github.com/agusrnfr/FOD/tree/501950def35ca8069b8cc1eb61010fc552ccbbcc/PRACTICA%204/Ejercicio_7) 
+ * [**Ejercicio 8**](https://github.com/agusrnfr/FOD/tree/501950def35ca8069b8cc1eb61010fc552ccbbcc/PRACTICA%204/Ejercicio_8)  
