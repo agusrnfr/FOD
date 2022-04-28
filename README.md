@@ -57,4 +57,7 @@
  * [**Ejercicio 5**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%204/Ejercicio_5) 
  * [**Ejercicio 6**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%204/Ejercicio_6) 
  * [**Ejercicio 7**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%204/Ejercicio_7) 
- * [**Ejercicio 8**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%204/Ejercicio_8)  
+ * [**Ejercicio 8**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%204/Ejercicio_8)
+ * [**Ejercicio 9**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%204/Ejercicio_9) 
+ * [**Ejercicio 10**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%204/Ejercicio_10) 
+ * [**Ejercicio 11**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%204/Ejercicio_11) 
