@@ -1,0 +1,39 @@
+1. Explique el concepto de función de dispersión. Enumere al menos tres funciones de
+dispersión y explique brevemente cómo funciona cada una. 
+
+Caja negra que a partir de una clave se obtiene la dirección donde debe estar el registro.
+No hay relación aparente entre clave y dirección. Dos claves distintas pueden transformarse en iguales direcciones (colisiones)
+
+Una función de hash o dispersión es una función que transforma un valor, que representa una llave primaria de un registro, 
+en otro valor dentro de un determinado rango, que se utiliza como dirección física de acceso para insertar un registro en un archivo de datos.
+
+Tres funciones de dispersion:
+
+1. Sumo digitos de la clave.
+2. F(x) (x mod [x/2]) + x/2 --> Al resto de la clave divido la mitad de la clave le sumo la mitad de la clave.
+2. Multiplico primer y ultimo digito y lo divido por el del medio. 
+
+2. Explique los conceptos de: sinónimo, colisión y registro en saturación. 
+
+Sinonimo: equivalente.
+
+Colision: situación en la que un registro es asignado, por función de dispersión, a una dirección que ya posee uno o más registros.
+
+Registro en saturación: Situacion en la que un registro es direccionado a un nodo que no dispone de capacidad para almacenarlo.
+
+3. Explique brevemente qué es la densidad de empaquetamiento. 
+
+Se define la Densidad de Empaquetamiento (DE) como la relación entre el espacio disponible para el archivo de datos y la cantidad de registros que integran dicho archivo.
+
+Cuanto mayor sea la DE, mayor será la posibilidad de colisiones, dado que en ese caso se dispone de menos espacio para esparcir registros.
+Por el contrario, si la DE se mantiene baja, se dispone de mayor espacio para esparcir registros y, por ende, disminuye la probabilidad de colisiones.
+Por otra parte, cuando la DE se mantiene baja, se desperdicia espacio en el disco, dado que se utiliza menor espacio que el reservado, generando fragmentación.
+
+DE= numero de registros / cantidad de espacio total (capacidad de nodo x nro de nodos)
+
+4. Explique cómo funcionan las siguientes técnicas de resolución de colisiones:
+● Saturación progresiva: Cuando se completa el nodo, se busca el próximo hasta encontrar uno libre.
+● Saturación progresiva encadenada: Similar a saturación progresiva, pero los reg. de saturación se encadenan y “no ocupan” necesariamente posiciones contiguas
+● Saturación progresiva encadenada con área de desborde separada: Las claves que general Overflow van a nodos especiales.
+● Dispersión doble: Se resuelven overflows aplicando una segunda función de dispersion a la clave para producir un desplazamiento. La segunda funcion se suma a la primera (dirección original) tantas veces como sea necesario hasta encontrar una dirección con espacio. 
+
