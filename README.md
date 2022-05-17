@@ -72,3 +72,11 @@
  * [**Ejercicio 20**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%204/Ejercicio_20)
  * [**Ejercicio 21**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%204/Ejercicio_21)
  * [**Ejercicio 22**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%204/Ejercicio_22)
+
+ ### **Práctica 5**
+  *ENUNCIADOS PRÁCTICA 4* [↺](https://github.com/agusrnfr/FOD/blob/main/PRACTICA%205/Pr%C3%A1ctica5-Hashing.pdf)
+ * [**Ejercicio 1-4**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%205/Ejercicio1-4)
+ * [**Ejercicio 5**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%205/Ejercicio5)
+ * [**Ejercicio 6**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%205/Ejercicio6)
+ * [**Ejercicio 7**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%205/Ejercicio7)
+ * [**Ejercicio 8**](https://github.com/agusrnfr/FOD/tree/main/PRACTICA%205/Ejercicio8)
