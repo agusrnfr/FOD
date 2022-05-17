@@ -13,9 +13,32 @@ Tres funciones de dispersion:
 2. F(x) (x mod [x/2]) + x/2 --> Al resto de la clave divido la mitad de la clave le sumo la mitad de la clave.
 2. Multiplico primer y ultimo digito y lo divido por el del medio. 
 
+-------------------------------------------------------------------
+1. Módulo tamaño de la memoria: esta función divide la clave por el tamaño del
+espacio de direcciones disponible, y luego utiliza el resto resultante de dicha 
+división como dirección física para la clave en cuestión. Suele ocurrir, en casi la
+mayoría de las funciones de dispersión, que generalmente se utiliza el resto en
+alguna parte para producir una dirección en el intervalo de direcciones
+correspondiente. Para obtener mejores resultados, es conveniente que la división
+se realice con un número primo, ya que genera mejores resultados.
+
+2. Centros cuadrados: esta función implica elevar la clave al cuadrado y luego
+extraer los dígitos centrales para ser ajustados al espacio de memoria disponible
+mediante la división y el uso del resto como dirección física en donde se
+almacenará la clave correspondiente. Es importante aclarar que el método original
+de centros cuadrados, utiliza solamente los dígitos centrales como dirección física
+donde será almacenada la clave, es decir, que no aplica la división, ni la utilización
+del resto. Sin embargo, cuando se utiliza un espacio de direcciones pequeño se
+debe aplicar tal división para generar una dirección válida.
+
+3. Transformación de la base: esta función convierte la clave a alguna otra base
+numérica que no sea con la que se está trabajando, luego se debe dividir la clave,
+ya transformada, por el total de direcciones disponibles y utilizar el resto como
+dirección física para almacenarla.
+
 2. Explique los conceptos de: sinónimo, colisión y registro en saturación. 
 
-Sinonimo: equivalente.
+Sinonimo: Las claves que pertenecen a un mismo registro son sinonimos.
 
 Colision: situación en la que un registro es asignado, por función de dispersión, a una dirección que ya posee uno o más registros.
 
