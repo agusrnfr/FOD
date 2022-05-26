@@ -6,50 +6,41 @@ n = 2;
 
 type
 
-suc = record
-	cod_usuario:integer;
-	fecha:string;
-	tiempo_sesion:real;
+date =record
+	dia:integer;
+	mes:integer;
+	anio:integer;
 end;
 
-producto = record
-	cod_usuario: integer;
-	fecha:string;
-	tiempo_total_de_sesiones_abiertas: real;
+rec = record
+	cod:integer;
+	fecha:date;
+	tiempo:real;
 end;
 
-maestro = file of producto;
-detalle = file of suc;
+maestro = file of rec;
+detalle = file of rec;
 ar_detalle = array [1..n] of detalle;
 
-procedure imprimirPr (p:producto);
+procedure imprimir (r:rec);
 begin
-	with p do begin
-		writeln ('CODIGO: ',cod_usuario);
-		writeln ('FECHA: ',fecha);
-		writeln ('TIEMPO TOTAL DE SESIONES ABIERTAS: ',tiempo_total_de_sesiones_abiertas);
-		writeln ('');
+	with r do begin
+		writeln ('CODIGO: ',cod);
+		writeln ('FECHA: ',fecha.dia,'/', fecha.mes, '/', fecha.anio);
+		writeln ('TIEMPO TOTAL DE SESIONES ABIERTAS: ',tiempo:0:2);
 	end;
 end;
 
-procedure leerDet (var d:suc);
+procedure leer (var r:rec);
 begin
-	with d do begin
-		write ('INGRESE COD: '); readln (cod_usuario);
-		if (cod_usuario <> -1) then begin
-			write ('INGRESE FECHA: '); readln (fecha);
-			write ('INGRESE TIEMPO DE SESION: '); readln (tiempo_sesion);
+	with r do begin
+		write ('INGRESE COD: '); readln (cod);
+		if (cod <> -1) then begin
+			write ('INGRESE DIA: '); readln (fecha.dia);
+			write ('INGRESE MES: '); readln (fecha.mes);
+			write ('INGRESE ANIO: '); readln (fecha.anio);
+			write ('INGRESE TIEMPO DE SESION: '); readln (tiempo);
 		end;
-		writeln ('');
-	end;
-end;
-
-procedure imprimirDet (d:suc);
-begin
-	with d do begin
-		writeln ('CODIGO: ',cod_usuario);
-		writeln ('FECHA: ',fecha);
-		writeln ('TIEMPO DE SESION: ',tiempo_sesion);
 		writeln ('');
 	end;
 end;
@@ -57,25 +48,25 @@ end;
 
 procedure crearDetalle (var arc_detalle:detalle);
 var
-d:suc;
+d:rec;
 begin
 	rewrite (arc_detalle);
-	leerDet (d);
-	while (d.cod_usuario <> -1) do begin
+	leer (d);
+	while (d.cod <> -1) do begin
 		write (arc_detalle,d);
-		leerDet(d);
+		leer(d);
 	end;
 	close (arc_detalle);
 end;
 
 procedure mostrarDetalle (var arc_detalle:detalle);
 var
-d:suc;
+d:rec;
 begin
 	reset (arc_detalle);
 	while not eof (arc_detalle) do begin
 		read (arc_detalle,d);
-		imprimirDet(d);
+		imprimir(d);
 	end;
 	close (arc_detalle);
 end;
@@ -91,8 +82,7 @@ begin
 	for i:= 1 to n do begin
 		Str (i,aString);
 		Assign (deta[i],'detalle'+ aString);
-		crearDetalle (deta[i])
-		{mostrarDetalle (deta[i]);}
+		crearDetalle (deta[i]);
+		mostrarDetalle (deta[i]);
 	end;
 end.
-
