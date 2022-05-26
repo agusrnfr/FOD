@@ -32,16 +32,16 @@ alumno = record
 	cantMcon: integer;
 end;
 
-deta = record
+materia = record
 	cod: integer;
 	fin:rango; //0 desaprobado 1 aprobado
 	curs:rango; //0 desaprobado 1 aprobado
 end;
 
 maestro = file of alumno;
-detalle = file of deta;
+detalle = file of materia;
 
-procedure leer (var arc_detalle: detalle; var dato: deta);
+procedure leer (var arc_detalle: detalle; var dato: materia);
 begin
 	if not eof (arc_detalle) then
 		read (arc_detalle,dato)
@@ -74,7 +74,7 @@ begin
 	end;
 end;
 
-procedure leerDet (var d:deta);
+procedure leerDet (var d:materia);
 begin
 	with d do begin
 		write ('INGRESE COD: '); readln (cod);
@@ -86,7 +86,7 @@ begin
 	end;
 end;
 
-procedure imprimirDet (d:deta);
+procedure imprimirDet (d:materia);
 begin
 	with d do begin
 		writeln ('CODIGO: ',cod);
@@ -110,7 +110,7 @@ end;
 
 procedure crearDetalle (var arc_detalle:detalle);
 var
-d:deta;
+d:materia;
 begin
 	rewrite (arc_detalle);
 	leerDet (d);
@@ -123,31 +123,31 @@ end;
 
 procedure actualizar (var arc_maestro: maestro; var arc_detalle: detalle);
 var
-d:deta;
-m:alumno;
-codActual:integer;
+m:materia;
+a:alumno;
+aux:integer;
+cantC,cantM:integer;
+
 begin
 	reset (arc_maestro);
 	reset (arc_detalle);
-	read (arc_maestro,m);
-	leer (arc_detalle,d);
-	while (d.cod <> valorAlto) do begin
-		codActual:= d.cod;
-		while (d.cod = codActual) do begin
-			if (d.fin = 1) then
-				m.cantMcon:= m.cantMcon + 1;
-				
-			if (d.curs = 1) then
-				m.cantMsin:= m.cantMsin + 1;
-			leer (arc_detalle,d);
+	leer (arc_detalle,m);
+	while (m.cod <> valorAlto) do begin
+		aux:= m.cod; cantC:= 0; cantM := 0;
+		while (m.cod = aux) do begin
+			if (m.curs <> 0) then
+				cantC+=1;
+			if (m.fin <> 0) then
+				cantM+=1;
+			leer (arc_detalle,m);
 		end;
-		while (m.cod <> codActual) do begin
-			read (arc_maestro,m);
-		end;
+		read(arc_maestro,a);
+		while (a.cod <> aux) do
+			read (arc_maestro,a);
+		a.cantMsin+=cantC;
+		a.cantMcon+=cantM;
 		seek (arc_maestro,filePos (arc_maestro)-1);
-		write (arc_maestro,m);
-		if not eof (arc_maestro) then
-			read (arc_maestro,m);
+		write (arc_maestro,a);
 	end;
 	close (arc_maestro);
 	close (arc_detalle);
@@ -155,7 +155,7 @@ end;
 
 procedure mostrarDetalle (var arc_detalle:detalle);
 var
-d:deta;
+d:materia;
 begin
 	reset (arc_detalle);
 	while not eof (arc_detalle) do begin
