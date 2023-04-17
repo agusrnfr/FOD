@@ -1,0 +1,85 @@
+1- Un archivo con registro de logitud variable 
+	a-Puede estar ordenado por algun criterio
+	b-Debe estar ordenado por algun criterio
+	c-Nunca puede ordenarse por algun criterio
+	d-Debe tener un caracter delimitador, por ej & 
+	e-Algunas de las anteriores
+	f-Ninguna de las anteriores
+
+2-Cuando se utiliza un algoritmo de merge
+	a-Es necesario tener mas de un archivo al cual aplicarlo
+	b-Es necesario que el archivo maestro sea de longitud fija
+	c-Es necesario que el archivo detalle sea de longitud fija
+	d-No necesariamente el archivo maestro quedara ordenado 
+	e-No es necesario que el archivo detalle este ordenado 
+	f-Todas
+	g-Algunas 
+
+3-El proceso de baja logica
+	a-Esta diseñado para borrar un registro de un archivo
+	b-No necesita que el archivo este ordenado
+	c-No necesita que el archivo este desordenado
+	d-Se puede aplicar a archivos de longitud fija
+	e-Se puede aplicar a archivos de longitud variable
+	f-Todas 
+	g-Algunas
+
+4-El algoritmo de actualizacion maestro-detalle
+	a-Solo se puede implementar si los archivos estan ordenados
+	b-Solo se puede implementar si el archivo maestro esta ordenado
+	c-Solo se puede implementar si el archivos detalle esta ordenado
+	d-Solo se puede implementar si los archivos estan desordenados
+	e-Todas
+	f-Ninguna 
+	g-Algunas
+
+5-Un arbol B*
+	a-Ocupa el mismo espacio que un arbol B
+	b-Tiene elementos en las hojas que pueden no pertenecer al archivo
+	c-Tiene elementos que pertenecen al archivo, en nodos no hojas
+	d-No permiten busqueda secuencial
+	e-A veces permiten busqueda secuencial
+	f-Algunas 
+	g-Todas
+	h-Ninguna
+
+6-En un indice secundario
+	a-Encontrar un registro es mas lento que sobre un indice primario
+	b-Encontrar un registro es igual de rapido que sobre un indice primario
+	c-Encontrar un registro es mas rapido que sobre un indice primario
+	d-Algunas
+	e-Ninguna
+	f-No corresponde a la pregunta
+
+7-Un arbol que se encuentra balanceado
+	a-Puede ser un arbol binario
+	b-Puede ser un arbol multicamino
+	c-Puede ser un arbol binario paginado
+	d-Puede ser un arbol B+
+	e-Puede ser un arbol B*
+	f-Todas 
+	g-Algunas
+	h-Ninguna
+
+8-Un overflow
+	a-Siempre se produce luego de una colision
+	b-A veces se produce posterior a una colision
+	c-No requiere que haya una colision que lo genere
+	d-Solo esta presente en hash estatico
+	e-Algunas
+	f-Ninguna
+
+9- Si la densidad de empaquetamiento tiende a 1(o al 100%)
+	a-Es conveniente utilizar dispersion doble para el overflow
+	b-Se debe cambiar solamente la funcion de dispersion
+	c-Debe aumentarse solamente el tamaño del archivo
+	d-Hay mas de una correcta
+	e-Ninguna 
+
+10-La dispersion dinamica
+	a-Requiere el uso de una estructura auxiliar 
+	b-Guarda los registros de forma ordenada por algun criterio
+	c-Necesita dos funciones de dispersion
+	d-Siempre requiere variar el tamaño del espacio de direcciones
+	e-Ninguna
+	
